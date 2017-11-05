@@ -20,8 +20,6 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet var echoButton: UIButton!
     @IBOutlet var reverbButton: UIButton!
 
-    @IBOutlet var recordButton: UIButton!
-    @IBOutlet var pauseButton: UIButton!
     @IBOutlet var stopButton: UIButton!
 
     var recordedAudioURL: URL!

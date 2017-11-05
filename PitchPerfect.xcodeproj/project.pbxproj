@@ -14,7 +14,8 @@
 		256B47DD1FAF28310058CCA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 256B47DB1FAF28310058CCA4 /* LaunchScreen.storyboard */; };
 		256B47E91FAF73810058CCA4 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256B47E81FAF73810058CCA4 /* PlaySoundsViewController.swift */; };
 		25716CC71FAF79FA009A99D9 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25716CC61FAF79FA009A99D9 /* PlaySoundsViewController+Audio.swift */; };
-		32DC768C95987984351CA66A /* UIButton+Responsive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC7DE47F89BB02E902AA4D /* UIButton+Responsive.swift */; };
+		32DC7072A448512846957148 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC75361DA68E52E55A7659 /* UIViewController+Alerts.swift */; };
+		32DC768C95987984351CA66A /* UIButton+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC7DE47F89BB02E902AA4D /* UIButton+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		256B47DE1FAF28310058CCA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		256B47E81FAF73810058CCA4 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		25716CC61FAF79FA009A99D9 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
-		32DC7DE47F89BB02E902AA4D /* UIButton+Responsive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Responsive.swift"; sourceTree = "<group>"; };
+		32DC75361DA68E52E55A7659 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		32DC7DE47F89BB02E902AA4D /* UIButton+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				25716CC61FAF79FA009A99D9 /* PlaySoundsViewController+Audio.swift */,
-				32DC7DE47F89BB02E902AA4D /* UIButton+Responsive.swift */,
+				32DC7DE47F89BB02E902AA4D /* UIButton+Helpers.swift */,
+				32DC75361DA68E52E55A7659 /* UIViewController+Alerts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -165,7 +168,8 @@
 				25716CC71FAF79FA009A99D9 /* PlaySoundsViewController+Audio.swift in Sources */,
 				256B47E91FAF73810058CCA4 /* PlaySoundsViewController.swift in Sources */,
 				256B47D31FAF28310058CCA4 /* AppDelegate.swift in Sources */,
-				32DC768C95987984351CA66A /* UIButton+Responsive.swift in Sources */,
+				32DC768C95987984351CA66A /* UIButton+Helpers.swift in Sources */,
+				32DC7072A448512846957148 /* UIViewController+Alerts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

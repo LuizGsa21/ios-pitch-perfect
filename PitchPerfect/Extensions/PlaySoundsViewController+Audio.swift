@@ -14,7 +14,7 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
     
     // MARK: Alerts
     
-    struct Alerts {
+    public struct Alerts {
         static let DismissAlert = "Dismiss"
         static let RecordingDisabledTitle = "Recording Disabled"
         static let RecordingDisabledMessage = "You've disabled this app from recording your microphone. Check Settings."
@@ -162,9 +162,4 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
         reverbButton.isEnabled = enabled
     }
     
-    func showAlert(_ title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: Alerts.DismissAlert, style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
 }

@@ -34,6 +34,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         stopRecording()
     }
 
+    // MARK: UI States
     func setDefaultState() {
         recordButton.isEnabled = true
         stopButton.isEnabled = false
@@ -46,6 +47,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         centerLabel.text = "Recording in Progress"
     }
 
+    // MARK: Audio
     func startRecording() {
         setRecordingState()
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
@@ -75,11 +77,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         if (flag) {
             performSegue(withIdentifier: "PlaySoundsViewController", sender: audioRecorder.url)
         } else {
-            // TODO: show alert
-            
+            showAlert(PlaySoundsViewController.Alerts.RecordingFailedTitle, message: PlaySoundsViewController.Alerts.RecordingFailedMessage)
         }
     }
 
+    // MARK: Prepare
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PlaySoundsViewController" {
             let controller = segue.destination as! PlaySoundsViewController
