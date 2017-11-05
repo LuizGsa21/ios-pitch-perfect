@@ -18,8 +18,6 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet var highPitchButton: UIButton!
     @IBOutlet var lowPitchButton: UIButton!
     @IBOutlet var echoButton: UIButton!
-
-
     @IBOutlet var reverbButton: UIButton!
 
     @IBOutlet var recordButton: UIButton!
@@ -39,26 +37,12 @@ class PlaySoundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
-        slowButton.contentMode = .scaleAspectFit
-        slowButton.imageView?.contentMode = .scaleAspectFit
-
-        fastButton.contentMode = .scaleAspectFit
-        fastButton.imageView?.contentMode = .scaleAspectFit
-
-        highPitchButton.contentMode = .scaleAspectFit
-        highPitchButton.imageView?.contentMode = .scaleAspectFit
-
-        lowPitchButton.contentMode = .scaleAspectFit
-        lowPitchButton.imageView?.contentMode = .scaleAspectFit
-
-        echoButton.contentMode = .scaleAspectFit
-        echoButton.imageView?.contentMode = .scaleAspectFit
-
-        reverbButton.contentMode = .scaleAspectFit
-        reverbButton.imageView?.contentMode = .scaleAspectFit
-
-        stopButton.contentMode = .scaleAspectFit
-        stopButton.imageView?.contentMode = .scaleAspectFit
+        slowButton.makeImageResponsive()
+        fastButton.makeImageResponsive()
+        highPitchButton.makeImageResponsive()
+        lowPitchButton.makeImageResponsive()
+        echoButton.makeImageResponsive()
+        reverbButton.makeImageResponsive()
     }
 
     override func viewWillAppear(_ animated: Bool) {
